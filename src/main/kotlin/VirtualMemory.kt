@@ -1,8 +1,23 @@
-const val memorySize = 10
-val pages = listOf(1, 5, 12, 3 , 5, 2, 4, 6, 7, 8, 10, 1, 9, 8, 11, 3, 13, 12, 14, 15)
+import java.io.File
+
+const val inputFile = "data/input.txt"
+const val outputFile = "data/output.txt"
 
 fun main() {
-    print(getInput("data/input.txt"))
+    val input = getInput(inputFile)
+    File(outputFile).writeText("") // clear output file
+    for (data in input) {
+        // TODO Refactor this awful code
+        var memory = IntArray(data.memorySize) { -1 }
+        val (operationsFIFO, secondTypeFIFO) = processAll(memory, data.pages, "FIFO")
+        printResult(outputFile, operationsFIFO, secondTypeFIFO, "FIFO")
+        memory = IntArray(data.memorySize) { -1 }
+        val (operationsLRU, secondTypeLRU) = processAll(memory, data.pages, "LRU")
+        printResult(outputFile, operationsLRU, secondTypeLRU, "LRU")
+        memory = IntArray(data.memorySize) { -1 }
+        val (operationsOPT, secondTypeOPT) = processAll(memory, data.pages, "OPT")
+        printResult(outputFile, operationsOPT, secondTypeOPT, "OPT")
+    }
 }
 
 // Returns the list of operations, applied to memory and a number of answers of the second type

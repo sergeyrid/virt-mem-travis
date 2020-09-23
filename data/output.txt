@@ -1,0 +1,306 @@
+FIFO:
+14 operations of the second type
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+Frame number 3 should be substituted
+Frame number 4 should be substituted
+Frame number 5 should be substituted
+Frame number 6 should be substituted
+Frame number 7 should be substituted
+Frame number 8 should be substituted
+Frame number 9 should be substituted
+Frame number 10 should be substituted
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+Frame number 3 should be substituted
+Frame number 4 should be substituted
+LRU:
+14 operations of the second type
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+Frame number 3 should be substituted
+Frame number 4 should be substituted
+Frame number 5 should be substituted
+Frame number 6 should be substituted
+Frame number 7 should be substituted
+Frame number 8 should be substituted
+Frame number 9 should be substituted
+Frame number 10 should be substituted
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+Frame number 2 should be substituted
+Frame number 1 should be substituted
+OPT:
+14 operations of the second type
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+Frame number 3 should be substituted
+Frame number 4 should be substituted
+Frame number 5 should be substituted
+Frame number 6 should be substituted
+Frame number 7 should be substituted
+Frame number 8 should be substituted
+Frame number 9 should be substituted
+Frame number 10 should be substituted
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+Frame number 3 should be substituted
+Frame number 4 should be substituted
+FIFO:
+13 operations of the second type
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+Frame number 3 should be substituted
+Frame number 4 should be substituted
+Frame number 5 should be substituted
+Frame number 6 should be substituted
+Frame number 7 should be substituted
+Frame number 8 should be substituted
+Frame number 9 should be substituted
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+Frame number 3 should be substituted
+Frame number 4 should be substituted
+LRU:
+13 operations of the second type
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+Frame number 3 should be substituted
+Frame number 4 should be substituted
+Frame number 5 should be substituted
+Frame number 6 should be substituted
+Frame number 7 should be substituted
+Frame number 8 should be substituted
+Frame number 9 should be substituted
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+Frame number 2 should be substituted
+Frame number 1 should be substituted
+OPT:
+13 operations of the second type
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+Frame number 3 should be substituted
+Frame number 4 should be substituted
+Frame number 5 should be substituted
+Frame number 6 should be substituted
+Frame number 7 should be substituted
+Frame number 8 should be substituted
+Frame number 9 should be substituted
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+Frame number 3 should be substituted
+Frame number 4 should be substituted
+FIFO:
+12 operations of the second type
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+Frame number 3 should be substituted
+Frame number 4 should be substituted
+Frame number 5 should be substituted
+Frame number 6 should be substituted
+Frame number 7 should be substituted
+Frame number 8 should be substituted
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+Frame number 3 should be substituted
+Frame number 4 should be substituted
+LRU:
+12 operations of the second type
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+Frame number 3 should be substituted
+Frame number 4 should be substituted
+Frame number 5 should be substituted
+Frame number 6 should be substituted
+Frame number 7 should be substituted
+Frame number 8 should be substituted
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+Frame number 2 should be substituted
+Frame number 1 should be substituted
+OPT:
+12 operations of the second type
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+Frame number 3 should be substituted
+Frame number 4 should be substituted
+Frame number 5 should be substituted
+Frame number 6 should be substituted
+Frame number 7 should be substituted
+Frame number 8 should be substituted
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+Frame number 3 should be substituted
+Frame number 4 should be substituted
+FIFO:
+11 operations of the second type
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+Frame number 3 should be substituted
+Frame number 4 should be substituted
+Frame number 5 should be substituted
+Frame number 6 should be substituted
+Frame number 7 should be substituted
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+Frame number 3 should be substituted
+Frame number 4 should be substituted
+LRU:
+11 operations of the second type
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+Frame number 3 should be substituted
+Frame number 4 should be substituted
+Frame number 5 should be substituted
+Frame number 6 should be substituted
+Frame number 7 should be substituted
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+Frame number 2 should be substituted
+Frame number 1 should be substituted
+OPT:
+11 operations of the second type
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+Frame number 3 should be substituted
+Frame number 4 should be substituted
+Frame number 5 should be substituted
+Frame number 6 should be substituted
+Frame number 7 should be substituted
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+The page has already been loaded into memory
+Frame number 3 should be substituted
+Frame number 4 should be substituted
+FIFO:
+6 operations of the second type
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+The page has already been loaded into memory
+The page has already been loaded into memory
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+LRU:
+6 operations of the second type
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+The page has already been loaded into memory
+The page has already been loaded into memory
+Frame number 2 should be substituted
+Frame number 1 should be substituted
+OPT:
+6 operations of the second type
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+Frame number 1 should be substituted
+Frame number 2 should be substituted
+The page has already been loaded into memory
+The page has already been loaded into memory
+Frame number 1 should be substituted
+Frame number 2 should be substituted
