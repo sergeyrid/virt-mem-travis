@@ -1,5 +1,5 @@
 // Returns the list of operations, applied to memory and a number of answers of the second type
-fun processAll(memory: Array<Int>, pages: List<Int>): Pair<List<String>, Int> {
+fun processAll(memory: IntArray, pages: List<Int>): Pair<List<String>, Int> {
     var queue = mutableListOf<Int>()
     val operations = mutableListOf<String>()
     var secondType = 0
