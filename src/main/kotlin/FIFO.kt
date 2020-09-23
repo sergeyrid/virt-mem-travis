@@ -10,8 +10,9 @@ fun processAll(memory: Array<Int>, pages: List<Int>): Pair<List<String>, Int> {
         if (substPage == page) {
             operations.add("The page has already been loaded into memory")
         } else {
-            memory[memory.indexOf(substPage)] = page
-            operations.add("Frame number $substPage should be substituted")
+            val frame = memory.indexOf(substPage)
+            memory[frame] = page
+            operations.add("Frame number ${frame + 1} should be substituted")
             ++secondType
         }
     }
