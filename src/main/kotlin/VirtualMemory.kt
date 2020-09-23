@@ -3,5 +3,5 @@ val pages = listOf<Int>(1, 5, 12, 3 , 5, 2, 4, 6, 7, 8, 10, 1, 9, 8, 11, 3, 13, 
 
 fun main() {
     val memory = IntArray(memorySize) {-1}
-    print(processAll(memory, pages))
+    print(processAllLRU(memory, pages))
 }
