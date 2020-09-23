@@ -28,6 +28,7 @@ fun processAll(memory: IntArray, pages: List<Int>, algo: String): Pair<List<Stri
     return operations to secondType
 }
 
+// Calls processOne function of an algorithm specified with the 'algo' parameter
 fun callAlgorithm(queue: MutableList<Int>,
                   limit: Int,
                   pageIndex: Int,
