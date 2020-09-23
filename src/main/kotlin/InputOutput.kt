@@ -17,3 +17,9 @@ fun getInput(inputFile: String): List<InputData> {
     }
     return input
 }
+
+fun printResult(outputFile: String, operations: List<String>, secondType: Int, algo: String) {
+    val file = File(outputFile)
+    val result = "$algo:\n$secondType operations of the second type\n" + operations.joinToString("\n") + "\n"
+    file.appendText(result)
+}
