@@ -19,10 +19,10 @@ fun processAll(memory: Array<Int>, pages: List<Int>): List<String> {
         val result = processOne(queue, memory.size, page)
         queue = result.first
         val substPage = result.second
-        memory[findFrame(substPage)] = page
         if (substPage == page) {
             operations.add("The page has already been loaded into memory")
         } else {
+            memory[memory.indexOf(substPage)] = page
             operations.add("Frame number $substPage should be substituted")
         }
     }
