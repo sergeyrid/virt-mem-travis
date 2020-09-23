@@ -1,9 +1,8 @@
 import java.io.File
 
-const val inputFile = "data/input.txt"
-const val outputFile = "data/output.txt"
-
-fun main() {
+fun main(args: Array<String>) {
+    val inputFile = args[0]
+    val outputFile = args[1]
     val input = getInput(inputFile)
     File(outputFile).writeText("") // clear output file
     for (data in input) {
