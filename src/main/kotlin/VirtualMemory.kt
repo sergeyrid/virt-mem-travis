@@ -7,6 +7,7 @@ fun main(args: Array<String>) {
     File(outputFile).writeText("") // clear output file
     for (data in input) {
         // TODO Refactor this awful code
+        File(outputFile).appendText("////////////////////////////////////////////////////\n")
         var memory = IntArray(data.memorySize) { -1 }
         val (operationsFIFO, secondTypeFIFO) = processAll(memory, data.pages, "FIFO")
         printResult(outputFile, operationsFIFO, secondTypeFIFO, "FIFO")

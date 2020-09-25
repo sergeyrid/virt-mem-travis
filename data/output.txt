@@ -1,3 +1,4 @@
+////////////////////////////////////////////////////
 FIFO:
 14 operations of the second type
 Frame number 1 should be substituted
@@ -76,6 +77,7 @@ The page has already been loaded into memory
 The page has already been loaded into memory
 Frame number 3 should be substituted
 Frame number 4 should be substituted
+////////////////////////////////////////////////////
 FIFO:
 13 operations of the second type
 Frame number 1 should be substituted
@@ -148,6 +150,7 @@ The page has already been loaded into memory
 The page has already been loaded into memory
 Frame number 3 should be substituted
 Frame number 4 should be substituted
+////////////////////////////////////////////////////
 FIFO:
 12 operations of the second type
 Frame number 1 should be substituted
@@ -214,6 +217,7 @@ The page has already been loaded into memory
 The page has already been loaded into memory
 Frame number 3 should be substituted
 Frame number 4 should be substituted
+////////////////////////////////////////////////////
 FIFO:
 11 operations of the second type
 Frame number 1 should be substituted
@@ -274,6 +278,7 @@ The page has already been loaded into memory
 The page has already been loaded into memory
 Frame number 3 should be substituted
 Frame number 4 should be substituted
+////////////////////////////////////////////////////
 FIFO:
 6 operations of the second type
 Frame number 1 should be substituted
