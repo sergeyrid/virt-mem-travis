@@ -21,14 +21,14 @@ fun main(args: Array<String>) {
 }
 
 fun printAll(memory: List<Int>, pages: List<Int>, outputFile: String) {
-    for (algo in listOf("FIFO", "LRU", "OPT")) {
+    for (algo in Algorithms.values()) {
         val (operations, secondType) = processAll(memory, pages, algo)
         printResult(outputFile, operations, secondType, algo)
     }
 }
 
 // Returns the list of operations, applied to memory and a number of answers of the second type
-fun processAll(initialMemory: List<Int>, pages: List<Int>, algo: String): Pair<List<String>, Int> {
+fun processAll(initialMemory: List<Int>, pages: List<Int>, algo: Algorithms): Pair<List<String>, Int> {
     val memory = initialMemory.toMutableList()
     var queue = mutableListOf<Int>()
     val operations = mutableListOf<String>()
@@ -55,11 +55,17 @@ fun callAlgorithm(queue: MutableList<Int>,
                   limit: Int,
                   pageIndex: Int,
                   pages: List<Int>,
-                  algo: String): Pair<MutableList<Int>, Int> {
+                  algo: Algorithms): Pair<MutableList<Int>, Int> {
     val page = pages[pageIndex]
     return when (algo) {
-        "FIFO" -> processOneFIFO(queue, limit, page)
-        "LRU" -> processOneLRU(queue, limit, page)
+        Algorithms.FIFO -> processOneFIFO(queue, limit, page)
+        Algorithms.LRU -> processOneLRU(queue, limit, page)
         else -> processOneOPT(queue, limit, pages.subList(pageIndex, pages.size), page)
     }
+}
+
+enum class Algorithms {
+    FIFO,
+    LRU,
+    OPT
 }
