@@ -23,3 +23,8 @@ fun printResult(outputFile: String, operations: List<String>, secondType: Int, a
     val result = "$algo:\n$secondType operations of the second type\n" + operations.joinToString("\n") + "\n"
     file.appendText(result)
 }
+
+data class InputData (
+    val memorySize: Int = 0,
+    val pages: List<Int> = listOf()
+)
