@@ -55,7 +55,7 @@ fun findOptimal(queue: MutableList<Int>, pages: List<Int>): Int {
     for (i in queue.indices) {
         val page = queue[i]
         nextUse[i] = pages.indexOf(page)
-        if (nextUse[i] == -1) {     // Page is not used, so it will be used later than
+        if (nextUse[i] == -1) {     // The page is not used, so it will be used later than
             nextUse[i] = pages.size // any page in the 'pages' array
         }
     }

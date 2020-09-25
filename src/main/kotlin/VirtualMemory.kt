@@ -1,10 +1,18 @@
 import java.io.File
+import java.lang.Exception
 
 fun main(args: Array<String>) {
-    val inputFile = args[0]
-    val outputFile = args[1]
-    val input = getInput(inputFile)
-    File(outputFile).writeText("") // clear output file
+    val (inputFile, outputFile) = try {
+        Pair(args[0], args[1])
+    } catch (e: Exception) {
+        throw Exception("Input and output file names were not passed")
+    }
+    val input = try {
+        getInput(inputFile)
+    } catch (e: Exception) {
+        throw Exception("Input file was not found")
+    }
+    File(outputFile).writeText("") // Clear output file
     for (data in input) {
         // TODO Refactor this awful code
         File(outputFile).appendText("////////////////////////////////////////////////////\n")
