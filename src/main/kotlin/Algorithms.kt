@@ -63,5 +63,10 @@ fun findOptimal(queue: MutableList<Int>, pages: List<Int>): Int {
             nextUse[i] = pages.size // any page in the 'pages' array
         }
     }
-    return nextUse.indexOf(nextUse.max()!!)
+    val max = nextUse.max()
+    return if (max != null) {
+        nextUse.indexOf(max)
+    } else {
+        throw Exception("Optimal solution could not be found")
+    }
 }
