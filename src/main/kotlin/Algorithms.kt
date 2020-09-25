@@ -27,7 +27,6 @@ fun processOneLRU(queue: MutableList<Int>, memorySize: Int, page: Int): Pair<Mut
     return queue to substPage
 }
 
-
 // Return is identical to FIFO function
 fun processOneOPT(queue: MutableList<Int>, memorySize: Int, pages: List<Int>, page: Int): Pair<MutableList<Int>, Int> {
     var substPage = -1

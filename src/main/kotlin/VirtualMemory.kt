@@ -39,11 +39,11 @@ fun processAll(initialMemory: List<Int>, pages: List<Int>, algo: Algorithms): Pa
         queue = result.first
         val substPage = result.second
         if (substPage == page) {
-            operations.add("The page has already been loaded into memory")
+            operations.add("Page $page has already been loaded into memory")
         } else {
             val frame = memory.indexOf(substPage)
             memory[frame] = page
-            operations.add("Frame number ${frame + 1} should be substituted")
+            operations.add("Frame ${frame + 1} should be substituted with page $page")
             ++secondType
         }
     }
