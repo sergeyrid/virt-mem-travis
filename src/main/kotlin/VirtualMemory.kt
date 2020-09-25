@@ -14,22 +14,22 @@ fun main(args: Array<String>) {
     }
     File(outputFile).writeText("") // Clear output file
     for (data in input) {
-        // TODO Refactor this awful code
         File(outputFile).appendText("////////////////////////////////////////////////////\n")
-        var memory = IntArray(data.memorySize) { -1 }
-        val (operationsFIFO, secondTypeFIFO) = processAll(memory, data.pages, "FIFO")
-        printResult(outputFile, operationsFIFO, secondTypeFIFO, "FIFO")
-        memory = IntArray(data.memorySize) { -1 }
-        val (operationsLRU, secondTypeLRU) = processAll(memory, data.pages, "LRU")
-        printResult(outputFile, operationsLRU, secondTypeLRU, "LRU")
-        memory = IntArray(data.memorySize) { -1 }
-        val (operationsOPT, secondTypeOPT) = processAll(memory, data.pages, "OPT")
-        printResult(outputFile, operationsOPT, secondTypeOPT, "OPT")
+        val memory = IntArray(data.memorySize) {-1}.toList()
+        printAll(memory, data.pages, outputFile)
+    }
+}
+
+fun printAll(memory: List<Int>, pages: List<Int>, outputFile: String) {
+    for (algo in listOf("FIFO", "LRU", "OPT")) {
+        val (operations, secondType) = processAll(memory, pages, algo)
+        printResult(outputFile, operations, secondType, algo)
     }
 }
 
 // Returns the list of operations, applied to memory and a number of answers of the second type
-fun processAll(memory: IntArray, pages: List<Int>, algo: String): Pair<List<String>, Int> {
+fun processAll(initialMemory: List<Int>, pages: List<Int>, algo: String): Pair<List<String>, Int> {
+    val memory = initialMemory.toMutableList()
     var queue = mutableListOf<Int>()
     val operations = mutableListOf<String>()
     var secondType = 0
