@@ -32,12 +32,8 @@ fun processOneLRU(queue: MutableList<Int>, memorySize: Int, page: Int): Pair<Mut
 fun processOneOPT(queue: MutableList<Int>, memorySize: Int, pages: List<Int>, page: Int): Pair<MutableList<Int>, Int> {
     var substPage = -1
     when {
-        queue.contains(page) -> {
-            substPage = page
-        }
-        queue.size < memorySize -> {
-            queue.add(page)
-        }
+        queue.contains(page) -> substPage = page
+        queue.size < memorySize -> queue.add(page)
         else -> {
             val index = findOptimal(queue, pages)
             substPage = queue[index]
