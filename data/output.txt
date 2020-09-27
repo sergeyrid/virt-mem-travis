@@ -1,311 +1,256 @@
 ////////////////////////////////////////////////////
 FIFO:
-14 operations of the second type
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-Frame number 3 should be substituted
-Frame number 4 should be substituted
-Frame number 5 should be substituted
-Frame number 6 should be substituted
-Frame number 7 should be substituted
-Frame number 8 should be substituted
-Frame number 9 should be substituted
-Frame number 10 should be substituted
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-Frame number 3 should be substituted
-Frame number 4 should be substituted
+58 operations of the second type
+Frame 1 should be substituted with page 1
+Frame 2 should be substituted with page 8
+Frame 3 should be substituted with page 3
+Frame 4 should be substituted with page 41
+Page 41 has already been loaded into memory
+Frame 5 should be substituted with page 19
+Frame 6 should be substituted with page 79
+Frame 7 should be substituted with page 2
+Frame 8 should be substituted with page 37
+Frame 9 should be substituted with page 76
+Frame 10 should be substituted with page 71
+Frame 11 should be substituted with page 45
+Frame 12 should be substituted with page 67
+Frame 13 should be substituted with page 6
+Frame 14 should be substituted with page 22
+Page 67 has already been loaded into memory
+Frame 15 should be substituted with page 43
+Frame 16 should be substituted with page 56
+Frame 17 should be substituted with page 57
+Frame 18 should be substituted with page 33
+Frame 19 should be substituted with page 5
+Frame 20 should be substituted with page 50
+Page 8 has already been loaded into memory
+Frame 21 should be substituted with page 80
+Page 8 has already been loaded into memory
+Frame 22 should be substituted with page 27
+Page 2 has already been loaded into memory
+Frame 23 should be substituted with page 77
+Frame 24 should be substituted with page 40
+Page 37 has already been loaded into memory
+Page 1 has already been loaded into memory
+Page 79 has already been loaded into memory
+Frame 25 should be substituted with page 66
+Page 57 has already been loaded into memory
+Frame 26 should be substituted with page 73
+Frame 27 should be substituted with page 49
+Frame 28 should be substituted with page 11
+Frame 29 should be substituted with page 31
+Page 80 has already been loaded into memory
+Frame 30 should be substituted with page 26
+Page 73 has already been loaded into memory
+Frame 31 should be substituted with page 39
+Frame 1 should be substituted with page 48
+Frame 2 should be substituted with page 15
+Page 66 has already been loaded into memory
+Frame 3 should be substituted with page 23
+Frame 4 should be substituted with page 64
+Frame 5 should be substituted with page 51
+Frame 6 should be substituted with page 82
+Page 5 has already been loaded into memory
+Frame 7 should be substituted with page 69
+Frame 8 should be substituted with page 81
+Page 69 has already been loaded into memory
+Frame 9 should be substituted with page 62
+Page 67 has already been loaded into memory
+Frame 10 should be substituted with page 21
+Page 31 has already been loaded into memory
+Frame 11 should be substituted with page 59
+Page 6 has already been loaded into memory
+Frame 12 should be substituted with page 36
+Frame 13 should be substituted with page 37
+Page 39 has already been loaded into memory
+Page 5 has already been loaded into memory
+Page 57 has already been loaded into memory
+Page 23 has already been loaded into memory
+Frame 14 should be substituted with page 68
+Frame 15 should be substituted with page 18
+Frame 16 should be substituted with page 38
+Frame 17 should be substituted with page 13
+Frame 18 should be substituted with page 75
+Frame 19 should be substituted with page 25
+Page 69 has already been loaded into memory
+Page 50 has already been loaded into memory
+Frame 20 should be substituted with page 45
+Frame 21 should be substituted with page 4
+Page 37 has already been loaded into memory
+Frame 22 should be substituted with page 12
+Page 18 has already been loaded into memory
+Frame 23 should be substituted with page 28
+Frame 24 should be substituted with page 78
+Frame 25 should be substituted with page 1
+Frame 26 should be substituted with page 17
+Frame 27 should be substituted with page 3
 LRU:
-14 operations of the second type
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-Frame number 3 should be substituted
-Frame number 4 should be substituted
-Frame number 5 should be substituted
-Frame number 6 should be substituted
-Frame number 7 should be substituted
-Frame number 8 should be substituted
-Frame number 9 should be substituted
-Frame number 10 should be substituted
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-Frame number 2 should be substituted
-Frame number 1 should be substituted
+60 operations of the second type
+Frame 1 should be substituted with page 1
+Frame 2 should be substituted with page 8
+Frame 3 should be substituted with page 3
+Frame 4 should be substituted with page 41
+Page 41 has already been loaded into memory
+Frame 5 should be substituted with page 19
+Frame 6 should be substituted with page 79
+Frame 7 should be substituted with page 2
+Frame 8 should be substituted with page 37
+Frame 9 should be substituted with page 76
+Frame 10 should be substituted with page 71
+Frame 11 should be substituted with page 45
+Frame 12 should be substituted with page 67
+Frame 13 should be substituted with page 6
+Frame 14 should be substituted with page 22
+Page 67 has already been loaded into memory
+Frame 15 should be substituted with page 43
+Frame 16 should be substituted with page 56
+Frame 17 should be substituted with page 57
+Frame 18 should be substituted with page 33
+Frame 19 should be substituted with page 5
+Frame 20 should be substituted with page 50
+Page 8 has already been loaded into memory
+Frame 21 should be substituted with page 80
+Page 8 has already been loaded into memory
+Frame 22 should be substituted with page 27
+Page 2 has already been loaded into memory
+Frame 23 should be substituted with page 77
+Frame 24 should be substituted with page 40
+Page 37 has already been loaded into memory
+Page 1 has already been loaded into memory
+Page 79 has already been loaded into memory
+Frame 25 should be substituted with page 66
+Page 57 has already been loaded into memory
+Frame 26 should be substituted with page 73
+Frame 27 should be substituted with page 49
+Frame 28 should be substituted with page 11
+Frame 29 should be substituted with page 31
+Page 80 has already been loaded into memory
+Frame 30 should be substituted with page 26
+Page 73 has already been loaded into memory
+Frame 31 should be substituted with page 39
+Frame 3 should be substituted with page 48
+Frame 4 should be substituted with page 15
+Page 66 has already been loaded into memory
+Frame 5 should be substituted with page 23
+Frame 9 should be substituted with page 64
+Frame 10 should be substituted with page 51
+Frame 11 should be substituted with page 82
+Page 5 has already been loaded into memory
+Frame 13 should be substituted with page 69
+Frame 14 should be substituted with page 81
+Page 69 has already been loaded into memory
+Frame 12 should be substituted with page 62
+Frame 15 should be substituted with page 67
+Frame 16 should be substituted with page 21
+Page 31 has already been loaded into memory
+Frame 18 should be substituted with page 59
+Frame 20 should be substituted with page 6
+Frame 2 should be substituted with page 36
+Page 37 has already been loaded into memory
+Page 39 has already been loaded into memory
+Page 5 has already been loaded into memory
+Page 57 has already been loaded into memory
+Page 23 has already been loaded into memory
+Frame 22 should be substituted with page 68
+Frame 7 should be substituted with page 18
+Frame 23 should be substituted with page 38
+Frame 24 should be substituted with page 13
+Frame 1 should be substituted with page 75
+Frame 6 should be substituted with page 25
+Page 69 has already been loaded into memory
+Frame 27 should be substituted with page 50
+Frame 28 should be substituted with page 45
+Frame 21 should be substituted with page 4
+Page 37 has already been loaded into memory
+Frame 30 should be substituted with page 12
+Page 18 has already been loaded into memory
+Frame 26 should be substituted with page 28
+Frame 3 should be substituted with page 78
+Frame 4 should be substituted with page 1
+Frame 25 should be substituted with page 17
+Frame 9 should be substituted with page 3
 OPT:
-14 operations of the second type
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-Frame number 3 should be substituted
-Frame number 4 should be substituted
-Frame number 5 should be substituted
-Frame number 6 should be substituted
-Frame number 7 should be substituted
-Frame number 8 should be substituted
-Frame number 9 should be substituted
-Frame number 10 should be substituted
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-Frame number 3 should be substituted
-Frame number 4 should be substituted
-////////////////////////////////////////////////////
-FIFO:
-13 operations of the second type
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-Frame number 3 should be substituted
-Frame number 4 should be substituted
-Frame number 5 should be substituted
-Frame number 6 should be substituted
-Frame number 7 should be substituted
-Frame number 8 should be substituted
-Frame number 9 should be substituted
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-Frame number 3 should be substituted
-Frame number 4 should be substituted
-LRU:
-13 operations of the second type
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-Frame number 3 should be substituted
-Frame number 4 should be substituted
-Frame number 5 should be substituted
-Frame number 6 should be substituted
-Frame number 7 should be substituted
-Frame number 8 should be substituted
-Frame number 9 should be substituted
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-Frame number 2 should be substituted
-Frame number 1 should be substituted
-OPT:
-13 operations of the second type
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-Frame number 3 should be substituted
-Frame number 4 should be substituted
-Frame number 5 should be substituted
-Frame number 6 should be substituted
-Frame number 7 should be substituted
-Frame number 8 should be substituted
-Frame number 9 should be substituted
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-Frame number 3 should be substituted
-Frame number 4 should be substituted
-////////////////////////////////////////////////////
-FIFO:
-12 operations of the second type
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-Frame number 3 should be substituted
-Frame number 4 should be substituted
-Frame number 5 should be substituted
-Frame number 6 should be substituted
-Frame number 7 should be substituted
-Frame number 8 should be substituted
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-Frame number 3 should be substituted
-Frame number 4 should be substituted
-LRU:
-12 operations of the second type
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-Frame number 3 should be substituted
-Frame number 4 should be substituted
-Frame number 5 should be substituted
-Frame number 6 should be substituted
-Frame number 7 should be substituted
-Frame number 8 should be substituted
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-Frame number 2 should be substituted
-Frame number 1 should be substituted
-OPT:
-12 operations of the second type
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-Frame number 3 should be substituted
-Frame number 4 should be substituted
-Frame number 5 should be substituted
-Frame number 6 should be substituted
-Frame number 7 should be substituted
-Frame number 8 should be substituted
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-Frame number 3 should be substituted
-Frame number 4 should be substituted
-////////////////////////////////////////////////////
-FIFO:
-11 operations of the second type
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-Frame number 3 should be substituted
-Frame number 4 should be substituted
-Frame number 5 should be substituted
-Frame number 6 should be substituted
-Frame number 7 should be substituted
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-Frame number 3 should be substituted
-Frame number 4 should be substituted
-LRU:
-11 operations of the second type
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-Frame number 3 should be substituted
-Frame number 4 should be substituted
-Frame number 5 should be substituted
-Frame number 6 should be substituted
-Frame number 7 should be substituted
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-Frame number 2 should be substituted
-Frame number 1 should be substituted
-OPT:
-11 operations of the second type
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-Frame number 3 should be substituted
-Frame number 4 should be substituted
-Frame number 5 should be substituted
-Frame number 6 should be substituted
-Frame number 7 should be substituted
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-The page has already been loaded into memory
-Frame number 3 should be substituted
-Frame number 4 should be substituted
-////////////////////////////////////////////////////
-FIFO:
-6 operations of the second type
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-The page has already been loaded into memory
-The page has already been loaded into memory
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-LRU:
-6 operations of the second type
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-The page has already been loaded into memory
-The page has already been loaded into memory
-Frame number 2 should be substituted
-Frame number 1 should be substituted
-OPT:
-6 operations of the second type
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-Frame number 1 should be substituted
-Frame number 2 should be substituted
-The page has already been loaded into memory
-The page has already been loaded into memory
-Frame number 1 should be substituted
-Frame number 2 should be substituted
+54 operations of the second type
+Frame 1 should be substituted with page 1
+Frame 2 should be substituted with page 8
+Frame 3 should be substituted with page 3
+Frame 4 should be substituted with page 41
+Page 41 has already been loaded into memory
+Frame 5 should be substituted with page 19
+Frame 6 should be substituted with page 79
+Frame 7 should be substituted with page 2
+Frame 8 should be substituted with page 37
+Frame 9 should be substituted with page 76
+Frame 10 should be substituted with page 71
+Frame 11 should be substituted with page 45
+Frame 12 should be substituted with page 67
+Frame 13 should be substituted with page 6
+Frame 14 should be substituted with page 22
+Page 67 has already been loaded into memory
+Frame 15 should be substituted with page 43
+Frame 16 should be substituted with page 56
+Frame 17 should be substituted with page 57
+Frame 18 should be substituted with page 33
+Frame 19 should be substituted with page 5
+Frame 20 should be substituted with page 50
+Page 8 has already been loaded into memory
+Frame 21 should be substituted with page 80
+Page 8 has already been loaded into memory
+Frame 22 should be substituted with page 27
+Page 2 has already been loaded into memory
+Frame 23 should be substituted with page 77
+Frame 24 should be substituted with page 40
+Page 37 has already been loaded into memory
+Page 1 has already been loaded into memory
+Page 79 has already been loaded into memory
+Frame 25 should be substituted with page 66
+Page 57 has already been loaded into memory
+Frame 26 should be substituted with page 73
+Frame 27 should be substituted with page 49
+Frame 28 should be substituted with page 11
+Frame 29 should be substituted with page 31
+Page 80 has already been loaded into memory
+Frame 30 should be substituted with page 26
+Page 73 has already been loaded into memory
+Frame 31 should be substituted with page 39
+Frame 2 should be substituted with page 48
+Frame 4 should be substituted with page 15
+Page 66 has already been loaded into memory
+Frame 5 should be substituted with page 23
+Frame 6 should be substituted with page 64
+Frame 7 should be substituted with page 51
+Frame 9 should be substituted with page 82
+Page 5 has already been loaded into memory
+Frame 10 should be substituted with page 69
+Frame 14 should be substituted with page 81
+Page 69 has already been loaded into memory
+Frame 15 should be substituted with page 62
+Page 67 has already been loaded into memory
+Frame 12 should be substituted with page 21
+Page 31 has already been loaded into memory
+Frame 16 should be substituted with page 59
+Page 6 has already been loaded into memory
+Frame 13 should be substituted with page 36
+Page 37 has already been loaded into memory
+Page 39 has already been loaded into memory
+Page 5 has already been loaded into memory
+Page 57 has already been loaded into memory
+Page 23 has already been loaded into memory
+Frame 17 should be substituted with page 68
+Frame 18 should be substituted with page 18
+Frame 19 should be substituted with page 38
+Frame 21 should be substituted with page 13
+Frame 22 should be substituted with page 75
+Frame 23 should be substituted with page 25
+Page 69 has already been loaded into memory
+Page 50 has already been loaded into memory
+Page 45 has already been loaded into memory
+Frame 11 should be substituted with page 4
+Page 37 has already been loaded into memory
+Frame 8 should be substituted with page 12
+Page 18 has already been loaded into memory
+Frame 20 should be substituted with page 28
+Frame 24 should be substituted with page 78
+Page 1 has already been loaded into memory
+Frame 1 should be substituted with page 17
+Page 3 has already been loaded into memory

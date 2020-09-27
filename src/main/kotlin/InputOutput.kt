@@ -3,7 +3,7 @@ import java.lang.IndexOutOfBoundsException
 import java.lang.NumberFormatException
 
 fun getInput(inputFile: String): List<InputData> {
-    val rawInput = File(inputFile).readLines()
+    val rawInput = File(inputFile).readLines().map { it.trim() }
     val input = mutableListOf<InputData>()
     for (i in rawInput.indices step 2) {
         try {
