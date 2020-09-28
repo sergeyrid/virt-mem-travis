@@ -1,8 +1,87 @@
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
-class ProcessAllTests {
+class ProcessAnyTests {
+    @Test
+    fun `process FIFO`() {
+        Assertions.assertEquals(processAny(
+            IntArray(5) {-1}.toList(),
+            listOf(1, 2, 3, 4, 5, 1, 5, 2, 6, 7, 8, 2),
+            Algorithms.FIFO
+        ),
+            Pair(
+                listOf(
+                    "Frame 1 should be substituted with page 1",
+                    "Frame 2 should be substituted with page 2",
+                    "Frame 3 should be substituted with page 3",
+                    "Frame 4 should be substituted with page 4",
+                    "Frame 5 should be substituted with page 5",
+                    "Page 1 has already been loaded into memory",
+                    "Page 5 has already been loaded into memory",
+                    "Page 2 has already been loaded into memory",
+                    "Frame 1 should be substituted with page 6",
+                    "Frame 2 should be substituted with page 7",
+                    "Frame 3 should be substituted with page 8",
+                    "Frame 4 should be substituted with page 2"
+                ),
+                9
+            )
+        )
+    }
 
+    @Test
+    fun `process LRU`() {
+        Assertions.assertEquals(processAny(
+            IntArray(5) {-1}.toList(),
+            listOf(1, 2, 3, 4, 5, 1, 5, 2, 6, 7, 8, 2),
+            Algorithms.LRU
+        ),
+            Pair(
+                listOf(
+                    "Frame 1 should be substituted with page 1",
+                    "Frame 2 should be substituted with page 2",
+                    "Frame 3 should be substituted with page 3",
+                    "Frame 4 should be substituted with page 4",
+                    "Frame 5 should be substituted with page 5",
+                    "Page 1 has already been loaded into memory",
+                    "Page 5 has already been loaded into memory",
+                    "Page 2 has already been loaded into memory",
+                    "Frame 3 should be substituted with page 6",
+                    "Frame 4 should be substituted with page 7",
+                    "Frame 1 should be substituted with page 8",
+                    "Page 2 has already been loaded into memory"
+                ),
+                8
+            )
+        )
+    }
+
+    @Test
+    fun `process OPT`() {
+        Assertions.assertEquals(processAny(
+            IntArray(5) {-1}.toList(),
+            listOf(1, 2, 3, 4, 5, 1, 5, 2, 6, 7, 8, 2),
+            Algorithms.OPT
+        ),
+            Pair(
+                listOf(
+                    "Frame 1 should be substituted with page 1",
+                    "Frame 2 should be substituted with page 2",
+                    "Frame 3 should be substituted with page 3",
+                    "Frame 4 should be substituted with page 4",
+                    "Frame 5 should be substituted with page 5",
+                    "Page 1 has already been loaded into memory",
+                    "Page 5 has already been loaded into memory",
+                    "Page 2 has already been loaded into memory",
+                    "Frame 1 should be substituted with page 6",
+                    "Frame 3 should be substituted with page 7",
+                    "Frame 4 should be substituted with page 8",
+                    "Page 2 has already been loaded into memory"
+                ),
+                8
+            )
+        )
+    }
 }
 
 class CallAlgorithmTests {
