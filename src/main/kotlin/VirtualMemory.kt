@@ -53,15 +53,15 @@ fun processAny(initialMemory: List<Int>, pages: List<Int>, algo: Algorithms): Pa
 
 // Calls processOne function of an algorithm specified with the 'algo' parameter
 fun callAlgorithm(queue: MutableList<Int>,
-                  limit: Int,
+                  memorySize: Int,
                   pageIndex: Int,
                   pages: List<Int>,
                   algo: Algorithms): Pair<MutableList<Int>, Int> {
     val page = pages[pageIndex]
     return when (algo) {
-        Algorithms.FIFO -> processOneFIFO(queue, limit, page)
-        Algorithms.LRU -> processOneLRU(queue, limit, page)
-        else -> processOneOPT(queue, limit, pages.subList(pageIndex, pages.size), page)
+        Algorithms.FIFO -> processOneFIFO(queue, memorySize, page)
+        Algorithms.LRU -> processOneLRU(queue, memorySize, page)
+        else -> processOneOPT(queue, memorySize, pages.subList(pageIndex, pages.size), page)
     }
 }
 
