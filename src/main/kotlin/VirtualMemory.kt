@@ -23,13 +23,13 @@ fun main(args: Array<String>) {
 // Calls all 3 algorithms and prints the results
 fun printAll(memory: List<Int>, pages: List<Int>, outputFile: String) {
     for (algo in Algorithms.values()) {
-        val (operations, secondType) = processAll(memory, pages, algo)
+        val (operations, secondType) = processAny(memory, pages, algo)
         printResult(outputFile, operations, secondType, algo)
     }
 }
 
 // Returns the list of operations, applied to memory and a number of answers of the second type
-fun processAll(initialMemory: List<Int>, pages: List<Int>, algo: Algorithms): Pair<List<String>, Int> {
+fun processAny(initialMemory: List<Int>, pages: List<Int>, algo: Algorithms): Pair<List<String>, Int> {
     val memory = initialMemory.toMutableList()
     var queue = mutableListOf<Int>()
     val operations = mutableListOf<String>()
