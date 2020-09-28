@@ -28,7 +28,7 @@ fun printAll(memory: List<Int>, pages: List<Int>, outputFile: String) {
     }
 }
 
-// Returns the list of operations, applied to memory and a number of answers of the second type
+// Returns the list of operations applied to memory and a number of answers of the second type
 fun processAny(initialMemory: List<Int>, pages: List<Int>, algo: Algorithms): Pair<List<String>, Int> {
     val memory = initialMemory.toMutableList()
     var queue = mutableListOf<Int>()
