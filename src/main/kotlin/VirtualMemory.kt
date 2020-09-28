@@ -20,6 +20,7 @@ fun main(args: Array<String>) {
     }
 }
 
+// Calls all 3 algorithms and prints the results
 fun printAll(memory: List<Int>, pages: List<Int>, outputFile: String) {
     for (algo in Algorithms.values()) {
         val (operations, secondType) = processAll(memory, pages, algo)
