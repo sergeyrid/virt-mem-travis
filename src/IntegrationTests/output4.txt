@@ -1,0 +1,20 @@
+/////////////////////////////////////////////
+Input number 1
+/////////////////////////////////////////////
+FIFO
+Frame 1 should be substituted with page 3
+Frame 2 should be substituted with page 4
+Frame 1 should be substituted with page 5
+Operations of the second type: 3
+/////////////////////////////////////////////
+LRU
+Frame 1 should be substituted with page 3
+Frame 2 should be substituted with page 4
+Frame 1 should be substituted with page 5
+Operations of the second type: 3
+/////////////////////////////////////////////
+OPT
+Frame 1 should be substituted with page 3
+Frame 2 should be substituted with page 4
+Frame 1 should be substituted with page 5
+Operations of the second type: 3

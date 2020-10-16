@@ -1,3 +1,4 @@
+
 plugins {
     id 'java'
     id 'org.jetbrains.kotlin.jvm' version '1.3.72'
@@ -13,10 +14,26 @@ repositories {
     mavenCentral()
 }
 
+configurations {
+    integrationTestsImplementation.extendsFrom implementation
+    integrationTestsRuntimeOnly.extendsFrom runtimeOnly
+}
+
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
     implementation 'org.junit.jupiter:junit-jupiter:5.4.2'
     implementation 'org.junit.jupiter:junit-jupiter:5.4.2'
+    integrationTestsImplementation "org.jetbrains.kotlin:kotlin-test:1.4.10"
+}
+
+sourceSets {
+    integrationTests {
+        compileClasspath += sourceSets.main.output
+        runtimeClasspath += sourceSets.main.output
+        java {
+            srcDirs = ['src/IntegrationTests']
+        }
+    }
 }
 
 test {
@@ -25,4 +42,15 @@ test {
 
 run {
     standardInput = System.in
+}
+
+
+task IntegrationTests(type: Test) {
+    testClassesDirs = sourceSets.integrationTests.output.classesDirs
+    classpath = sourceSets.integrationTests.runtimeClasspath
+    useJUnitPlatform()
+
+    doLast {
+        delete "src/IntegrationTests/tmpOutput.txt"
+    }
 }

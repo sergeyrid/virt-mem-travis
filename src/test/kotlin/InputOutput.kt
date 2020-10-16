@@ -27,7 +27,7 @@ class GetInputTests {
     }
 
     @Test
-    fun `a lot of rubbish and one input`() {
+    fun `rubbish with one correct input`() {
         val inputFile = "src/test/kotlin/input3.txt"
         val actual = listOf(InputData(2, listOf(3, 4, 5)))
         Assertions.assertEquals(getInput(inputFile), actual)
