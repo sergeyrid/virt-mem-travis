@@ -25,47 +25,32 @@ fun main(args: Array<String>) {
 // Calls all 3 algorithms and prints the results
 fun printAll(memory: List<Int>, pages: List<Int>, outputFile: String) {
     for (algo in Algorithms.values()) {
-        File(outputFile).appendText("////////////////////////////////////////////////////\n")
-        val (operations, secondType) = processAny(memory, pages, algo)
-        printResult(outputFile, operations, secondType, algo)
+        val operations = processAny(memory, pages, algo)
+        printResult(outputFile, operations, algo)
     }
 }
 
-// Returns the list of operations applied to memory and a number of answers of the second type
-fun processAny(initialMemory: List<Int>, pages: List<Int>, algo: Algorithms): Pair<List<String>, Int> {
+// Returns the list of operations applied to memory
+fun processAny(initialMemory: List<Int>, pages: List<Int>, algo: Algorithms): List<Operation>{
     val memory = initialMemory.toMutableList()
-    var queue = mutableListOf<Int>()
-    val operations = mutableListOf<String>()
-    var secondType = 0
+    val memoryStructure = mutableListOf<Int>()
+    val operations = mutableListOf<Operation>()
     for (i in pages.indices) {
         val page = pages[i]
-        val result = callAlgorithm(queue, memory.size, i, pages, algo)
-        queue = result.first
-        val substPage = result.second
+        val substPage = when (algo) {
+            Algorithms.FIFO -> memoryStructure.processOneFIFO(memory.size, page)
+            Algorithms.LRU -> memoryStructure.processOneLRU(memory.size, page)
+            else -> memoryStructure.processOneOPT(memory.size, pages.subList(i, pages.size), page)
+        }
         if (substPage == page) {
-            operations.add("Page $page has already been loaded into memory")
+            operations.add(Operation(false, page))
         } else {
             val frame = memory.indexOf(substPage)
             memory[frame] = page
-            operations.add("Frame ${frame + 1} should be substituted with page $page")
-            ++secondType
+            operations.add(Operation(true, page, frame + 1))
         }
     }
-    return operations to secondType
-}
-
-// Calls processOne function of an algorithm specified with the 'algo' parameter
-fun callAlgorithm(queue: MutableList<Int>,
-                  memorySize: Int,
-                  pageIndex: Int,
-                  pages: List<Int>,
-                  algo: Algorithms): Pair<MutableList<Int>, Int> {
-    val page = pages[pageIndex]
-    return when (algo) {
-        Algorithms.FIFO -> processOneFIFO(queue, memorySize, page)
-        Algorithms.LRU -> processOneLRU(queue, memorySize, page)
-        else -> processOneOPT(queue, memorySize, pages.subList(pageIndex, pages.size), page)
-    }
+    return operations
 }
 
 enum class Algorithms {
@@ -73,3 +58,9 @@ enum class Algorithms {
     LRU,
     OPT
 }
+
+data class Operation (
+    val secondType: Boolean = true,
+    val page: Int = 0,
+    val frame: Int = 0
+)

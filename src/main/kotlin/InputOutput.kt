@@ -18,10 +18,20 @@ fun getInput(inputFile: String): List<InputData> {
     return input
 }
 
-fun printResult(outputFile: String, operations: List<String>, secondType: Int, algo: Algorithms) {
+fun printResult(outputFile: String, operations: List<Operation>, algo: Algorithms) {
     val file = File(outputFile)
-    val result = "$algo:\n$secondType operations of the second type\n" + operations.joinToString("\n") + "\n"
-    file.appendText(result)
+    var secondType = 0
+    file.appendText("/////////////////////////////////\n")
+    file.appendText("$algo\n")
+    for (operation in operations) {
+        if (operation.secondType) {
+            file.appendText("Frame ${operation.frame} should be substituted with page ${operation.page}\n")
+            ++secondType
+        } else {
+            file.appendText("Page ${operation.page} has already been loaded into memory\n")
+        }
+    }
+    file.appendText("$secondType operations of the second type\n")
 }
 
 data class InputData (

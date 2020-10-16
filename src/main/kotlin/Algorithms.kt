@@ -1,63 +1,64 @@
-// Returns the queue and a page, that was removed from memory (if none, returns -1)
-fun processOneFIFO(queue: MutableList<Int>, memorySize: Int, page: Int): Pair<MutableList<Int>, Int> {
+// Returns a page, that was removed from memory (if none, returns -1)
+fun MutableList<Int>.processOneFIFO(memorySize: Int, page: Int): Int {
     var substPage = -1
     when {
-        queue.contains(page) -> substPage = page
-        queue.size < memorySize -> queue.add(page)
+        this.contains(page) -> substPage = page
+        this.size < memorySize -> this.add(page)
         else -> {
-            substPage = queue[0]
-            queue.removeAt(0)
-            queue.add(page)
+            substPage = this[0]
+            this.removeAt(0)
+            this.add(page)
         }
     }
-    return queue to substPage
+    return substPage
 }
 
 // Return is identical to FIFO function
-fun processOneLRU(queue: MutableList<Int>, memorySize: Int, page: Int): Pair<MutableList<Int>, Int> {
+fun MutableList<Int>.processOneLRU(memorySize: Int, page: Int): Int {
     var substPage = -1
-    if (queue.contains(page)) {
+    if (this.contains(page)) {
         substPage = page
-        queue.remove(page)
-    } else if (queue.size >= memorySize) {
-        substPage = queue[0]
-        queue.removeAt(0)
+        this.remove(page)
+    } else if (this.size >= memorySize) {
+        substPage = this[0]
+        this.removeAt(0)
     }
-    queue.add(page)
-    return queue to substPage
+    this.add(page)
+    return substPage
 }
 
 // Return is identical to FIFO function
-fun processOneOPT(queue: MutableList<Int>, memorySize: Int, pages: List<Int>, page: Int): Pair<MutableList<Int>, Int> {
+fun MutableList<Int>.processOneOPT(memorySize: Int, pages: List<Int>, page: Int): Int {
     var substPage = -1
     when {
-        queue.contains(page) -> substPage = page
-        queue.size < memorySize -> queue.add(page)
+        this.contains(page) -> substPage = page
+        this.size < memorySize -> this.add(page)
         else -> {
-            val index = findOptimal(queue, pages)
-            substPage = queue[index]
-            queue.removeAt(index)
-            queue.add(page)
+            val index = findOptimal(this, pages)
+            substPage = this[index]
+            this.removeAt(index)
+            this.add(page)
         }
     }
-    return queue to substPage
+    return substPage
 }
 
 // This is used by OPT algorithm
 // Returns the index of an optimal page to be removed from the queue
-fun findOptimal(queue: MutableList<Int>, pages: List<Int>): Int {
+fun findOptimal(queue: List<Int>, pages: List<Int>): Int {
     val nextUse = IntArray(queue.size) // For each page in the queue saves how soon it will be used
     for (i in queue.indices) {
         val page = queue[i]
         nextUse[i] = pages.indexOf(page)
-        if (nextUse[i] == -1) {     // The page is not used, so it will be used later than
-            nextUse[i] = pages.size // any page in the 'pages' array
+        if (nextUse[i] == -1) {     // The page is not used, so it will be used later than any other page
+            nextUse[i] = pages.size
         }
     }
     val max = nextUse.max()
     return if (max != null) {
         nextUse.indexOf(max)
     } else {
-        throw Exception("Optimal solution could not be found")
+        print("Something went wrong when applying OPT algorithm")
+        0
     }
 }
