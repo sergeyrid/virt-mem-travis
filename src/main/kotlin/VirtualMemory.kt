@@ -16,13 +16,20 @@ fun main(args: Array<String>) {
         return
     }
     File(outputFile).writeText("") // Clear output file
-    for (data in input) {
-        val memory = IntArray(data.memorySize) {-1}.toList()
-        printAll(memory, data.pages, outputFile)
+    for (dataIndex in input.indices) {
+        File(outputFile).appendText(SEPARATOR)
+        File(outputFile).appendText("Input number ${dataIndex + 1}\n")
+        val data = input[dataIndex]
+        if (data.memorySize <= 0) {
+            File(outputFile).appendText("Error: negative or zero memory size\n")
+        } else {
+            val memory = IntArray(data.memorySize) {-1}.toList()
+            printAll(memory, data.pages, outputFile)
+        }
     }
 }
 
-// Calls all 3 algorithms and prints the results
+// Calls all 3 algorithms for one input and prints the results
 fun printAll(memory: List<Int>, pages: List<Int>, outputFile: String) {
     for (algo in Algorithms.values()) {
         val operations = processAny(memory, pages, algo)

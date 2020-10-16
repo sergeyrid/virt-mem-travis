@@ -1,4 +1,4 @@
-// Returns a page, that was removed from memory (if none, returns -1)
+// Returns a page that was removed from memory (if none, returns -1)
 fun MutableList<Int>.processOneFIFO(memorySize: Int, page: Int): Int {
     var substPage = -1
     when {
@@ -43,7 +43,7 @@ fun MutableList<Int>.processOneOPT(memorySize: Int, pages: List<Int>, page: Int)
     return substPage
 }
 
-// This is used by OPT algorithm
+// This function is used by OPT algorithm
 // Returns the index of an optimal page to be removed from the queue
 fun findOptimal(queue: List<Int>, pages: List<Int>): Int {
     val nextUse = IntArray(queue.size) // For each page in the queue saves how soon it will be used

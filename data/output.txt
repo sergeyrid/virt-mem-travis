@@ -1,6 +1,7 @@
-////////////////////////////////////////////////////
-FIFO:
-58 operations of the second type
+/////////////////////////////////////////////
+Input number 1
+/////////////////////////////////////////////
+FIFO
 Frame 1 should be substituted with page 1
 Frame 2 should be substituted with page 8
 Frame 3 should be substituted with page 3
@@ -84,9 +85,9 @@ Frame 24 should be substituted with page 78
 Frame 25 should be substituted with page 1
 Frame 26 should be substituted with page 17
 Frame 27 should be substituted with page 3
-////////////////////////////////////////////////////
-LRU:
-60 operations of the second type
+Operations of the second type: 58
+/////////////////////////////////////////////
+LRU
 Frame 1 should be substituted with page 1
 Frame 2 should be substituted with page 8
 Frame 3 should be substituted with page 3
@@ -170,9 +171,9 @@ Frame 3 should be substituted with page 78
 Frame 4 should be substituted with page 1
 Frame 25 should be substituted with page 17
 Frame 9 should be substituted with page 3
-////////////////////////////////////////////////////
-OPT:
-54 operations of the second type
+Operations of the second type: 60
+/////////////////////////////////////////////
+OPT
 Frame 1 should be substituted with page 1
 Frame 2 should be substituted with page 8
 Frame 3 should be substituted with page 3
@@ -256,3 +257,21 @@ Frame 24 should be substituted with page 78
 Page 1 has already been loaded into memory
 Frame 1 should be substituted with page 17
 Page 3 has already been loaded into memory
+Operations of the second type: 54
+/////////////////////////////////////////////
+Input number 2
+Error: negative or zero memory size
+/////////////////////////////////////////////
+Input number 3
+/////////////////////////////////////////////
+FIFO
+Frame 1 should be substituted with page 1
+Operations of the second type: 1
+/////////////////////////////////////////////
+LRU
+Frame 1 should be substituted with page 1
+Operations of the second type: 1
+/////////////////////////////////////////////
+OPT
+Frame 1 should be substituted with page 1
+Operations of the second type: 1
