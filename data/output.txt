@@ -84,6 +84,7 @@ Frame 24 should be substituted with page 78
 Frame 25 should be substituted with page 1
 Frame 26 should be substituted with page 17
 Frame 27 should be substituted with page 3
+////////////////////////////////////////////////////
 LRU:
 60 operations of the second type
 Frame 1 should be substituted with page 1
@@ -169,6 +170,7 @@ Frame 3 should be substituted with page 78
 Frame 4 should be substituted with page 1
 Frame 25 should be substituted with page 17
 Frame 9 should be substituted with page 3
+////////////////////////////////////////////////////
 OPT:
 54 operations of the second type
 Frame 1 should be substituted with page 1

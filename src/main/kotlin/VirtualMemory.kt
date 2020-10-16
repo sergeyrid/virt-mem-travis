@@ -2,19 +2,21 @@ import java.io.File
 import java.lang.Exception
 
 fun main(args: Array<String>) {
-    val (inputFile, outputFile) = try {
-        Pair(args[0], args[1])
-    } catch (e: Exception) {
-        throw Exception("Input and output file names were not passed")
+    var fileNames = args
+    while (fileNames.size < 2) {
+        println("Please, try again")
+        println("Pass input and output file names separated with a space:")
+        fileNames = readLine().toString().split(' ').toTypedArray()
     }
+    val (inputFile, outputFile) = Pair(fileNames[0], fileNames[1])
     val input = try {
         getInput(inputFile)
     } catch (e: Exception) {
-        throw Exception("Input file was not found")
+        print("Input file could not be found")
+        return
     }
     File(outputFile).writeText("") // Clear output file
     for (data in input) {
-        File(outputFile).appendText("////////////////////////////////////////////////////\n")
         val memory = IntArray(data.memorySize) {-1}.toList()
         printAll(memory, data.pages, outputFile)
     }
@@ -23,6 +25,7 @@ fun main(args: Array<String>) {
 // Calls all 3 algorithms and prints the results
 fun printAll(memory: List<Int>, pages: List<Int>, outputFile: String) {
     for (algo in Algorithms.values()) {
+        File(outputFile).appendText("////////////////////////////////////////////////////\n")
         val (operations, secondType) = processAny(memory, pages, algo)
         printResult(outputFile, operations, secondType, algo)
     }
