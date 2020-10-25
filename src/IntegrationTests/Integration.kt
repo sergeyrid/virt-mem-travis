@@ -7,7 +7,7 @@ class IntegrationTests {
     fun test1() {
         main(arrayOf("src/IntegrationTests/input1.txt", "src/IntegrationTests/tmpOutput.txt"))
         val output = File("src/IntegrationTests/tmpOutput.txt").readText()
-        val actual = File("src/IntegrationTests/output1.txt").readText()
+        val actual = File("src/IntegrationTests/output2.txt").readText()
         Assertions.assertEquals(output, actual)
     }
 
